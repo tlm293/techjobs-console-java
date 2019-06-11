@@ -83,7 +83,7 @@ public class JobData {
         return jobs;
     }
 
-
+    //findByValue(String searchTerm
     public static ArrayList<HashMap<String, String>> findByValue(String value) {
 
 
@@ -97,15 +97,19 @@ public class JobData {
             for (String column : row.values()) {
 
                 if (column.toLowerCase().contains(value.toLowerCase())) {
-                    eachJob.add(row);
+                        eachJob.add(row);
+                        break;
+
+
+
+                    }
 
                 }
 
             }
-
-        }
         return eachJob;
-    }
+        }
+
 
 
 

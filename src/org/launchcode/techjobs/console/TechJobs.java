@@ -118,6 +118,7 @@ public class TechJobs {
 
         } else {
 
+            //for(Map(String, String) job : someJobs) { } <-- another method
             for (int i = 0; i < someJobs.size(); i++) {
 
                 System.out.println("\n*****");
